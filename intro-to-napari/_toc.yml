@@ -1,0 +1,16 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro-to-napari-workshop-index
+chapters:
+  - file: intro-to-napari-workshop-guide-1-install-napari
+  - file: intro-to-napari-workshop-guide-2-explore-the-viewer
+  - file: intro-to-napari-workshop-guide-3-plugins
+  - file: intro-to-napari-workshop-guide-4-complete-a-workflow
+  - file: intro-to-napari-workshop-guide-5-jupyter-notebooks-and-jupyter-lab
+  - file: intro-to-napari-workshop-guide-6-resources
+  - file: docs/build_your_workshop
+    sections:
+    - file: docs/deployment_guide
+    - file: docs/launching_binder
