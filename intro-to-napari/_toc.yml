@@ -10,7 +10,4 @@ chapters:
   - file: intro-to-napari-workshop-guide-4-complete-a-workflow
   - file: intro-to-napari-workshop-guide-5-jupyter-notebooks-and-jupyter-lab
   - file: intro-to-napari-workshop-guide-6-resources
-  - file: docs/build_your_workshop
-    sections:
-    - file: docs/deployment_guide
-    - file: docs/launching_binder
+
