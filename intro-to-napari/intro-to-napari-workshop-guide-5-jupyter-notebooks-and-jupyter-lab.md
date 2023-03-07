@@ -13,7 +13,7 @@ This guide covers the following topics:
 * [Install Jupyter Lab](#install-jupyter-lab)  
 * [Create a Jupyter Notebook in Jupyter Lab](#create-a-jupyter-notebook-in-jupyter-lab)  
 * [Explore the Viewer with Jupyter Notebooks](#explore-the-viewer-with-jupyter-notebooks)  
-* [Run a Notebook with an ML-based Plugin](#run-a-notebook-with-an-ml-based-plugin)   
+* [Run a Notebook with an ML-based Plugin](#run-a-notebook-with-an-ml-based-plugin-machine-learning-based-plugin)   
 
 Jupyter notebooks are scripts for interactive computing in the Jupyter Lab app. They enable working in steps to process data by running code captured in isolated cells. We can use Jupyter Lab to write and execute Jupyter Notebooks written in python in combination with napari to interact with image data. This platform extends the analysis capabilities of napari to allow for additions like batch processing, adjusting layer properties, and ML-based (Machine Learning-based) image processing among other things.  
 
@@ -71,7 +71,7 @@ We’ll be reusing the Jupyter Notebooks from the 2022 Scipy Workshop. `(Danniel
     * You can run the whole notebook in a single step by clicking on the menu **Cell** -> **Run All**.  
     * To restart the kernel (i.e. the computational engine), click on the menu **Kernel** -> **Restart**. This allows you to start a computation over from scratch (e.g. variables are deleted, open files are closed, etc…). It resets all of the variables that were created in the code so that you can troubleshoot or process new data.  
 
-## Run a Notebook with a ML-based plugin  (machine learning-based plugin)
+## Run a Notebook with an ML-based plugin (machine learning-based plugin)
 
 To install plugins, we recommend:
 * Opening **Plugins**>**Install/Uninstall Plugins** in the napari menu

@@ -1,10 +1,5 @@
 # Build your own workshop
 
-```{note}
-This section is about building your own workshop - it should probably be removed
-from your workshop material once you have adapted it to your needs.
-```
-
 ## Build locally
 
 To build this workshop locally and preview the generated materials in html format (as a webpage), follow the steps below.
@@ -14,12 +9,12 @@ To build this workshop locally and preview the generated materials in html forma
 First, [fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo) and clone it to your local system by
 
 ```
-git clone git@github.com:<your-username>/napari-workshop-template.git
+git clone git@github.com:<your-username>/intro-to-napari-workshop.git
 ```
 
 In a console/terminal, after installing python on your system using the
 distribution of your choice, and ideally
-[using a virtual environment](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/), navigate to the napari-workshop-template folder,
+[using a virtual environment](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/), navigate to the `intro-to-napari-workshop` folder,
 run
 
 ```
@@ -32,19 +27,19 @@ To render the html version of your book, including autogenerating figures or
 running Jupyter notebooks, run
 
 ```
-jupyter book build napari-workshops
+jupyter book build intro-to-napari
 ```
 
-where `napari-workshops` is the name of the folder where your book is stored.
+where `intro-to-napari` is the name of the folder where your book is stored.
 The rendered version of the workshop materials will be under
-`napari-workshops/_build/html`. For more information, see the
+`intro-to-napari/_build/html`. For more information, see the
 [JupyterBook documentation](https://jupyterbook.org/).
 
 **Note:** The html files built by the `jupyter book` commands do not need to be
 stored on GitHub, so we added the following path to our `.gitignore` file:
 
 ```
-napari-workshops/_build/
+intro-to-napari/_build/
 ```
 
 ## Publish and share your workshop
@@ -60,7 +55,7 @@ If you want to set up this material to be published as a website from your fork,
     - name: Build workshop
       run: |
         python -m pip install -r requirements.txt
-        jupyter book build napari-workshops
+        jupyter book build intro-to-napari
     ```
 
 2. Edit the `.github/workflows/pages.yml` file in your workshop folder to
@@ -71,7 +66,7 @@ If you want to set up this material to be published as a website from your fork,
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
       with:
-        path: 'napari-workshops/_build/html'
+        path: 'intro-to-napari/_build/html'
     ```
 
 As currently configured, whenever a new commit is added to the `main` branch of the repository, a new deployment is made (the Jupyter book is built, and the
@@ -85,7 +80,7 @@ https://<your-username>.github.io/<workshop-name>
 
 For this template, the built site is at
 
-https://napari.github.io/napari-workshop-template
+https://melissawm.github.io/intro-to-napari-workshop
 
 ## Index your workshop using Zenodo (for citation purposes)
 
