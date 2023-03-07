@@ -1,4 +1,4 @@
-# Intro to napari workshop
+# Installing and opening napari
 
 This workshop walks you through the following topics and exercises: 
 
