@@ -34,7 +34,7 @@ Jupyter notebooks are scripts for interactive computing in the Jupyter Lab app. 
 
 ## Create a Jupyter Notebook in Jupyter Lab  
 
-We’ll be reusing the Jupyter Notebooks from the 2022 Scipy Workshop. `(Dannielle - What if they didn't do that workshop?)`  
+We will follow the 2022 Scipy Workshop to create our jupyter lab books: 
 * Open Jupyter Lab:
     * In the terminal (Mac) or Anaconda Prompt (Windows), enter:  
     `jupyter-lab`    
@@ -53,8 +53,8 @@ We’ll be reusing the Jupyter Notebooks from the 2022 Scipy Workshop. `(Danniel
 
          **Note:** To find the Filetree of a folder or file:  
         * Mac: Open **Finder**, click **View** > **Show Path Bar** > control+left-click the **folder/file name** and click **Copy ‘ ’ as Pathname**  
-        * Windows: Open **Search** and copy the **Pathname** in the upper bar. (`Dannielle, is this in File Explorer? I can't figure out where we are when we open Search.`)
-    * Open a blank Python3 notebook (see [intro slides](https://github.com/BiAPoL/HIP_Introduction_to_Napari_and_image_processing_with_Python_2022/blob/main/docs/02_Introduction_Jupyter_lab/Introduction_Jupyter_lab.pdf)).
+        * Windows: Use the Windows **Search** bar (by default in the lower left of the taskbar), type in the name of the file or folder, then right click the search result and select **Copy path**.
+    * Open a blank Python3 notebook in Jupyter lab by clicking the Python3 notebook icon (see [intro slides](https://github.com/BiAPoL/HIP_Introduction_to_Napari_and_image_processing_with_Python_2022/blob/main/docs/02_Introduction_Jupyter_lab/Introduction_Jupyter_lab.pdf)).
 
 ## Explore the Viewer with Jupyter Notebooks  
 
@@ -81,11 +81,8 @@ To install plugins, we recommend:
 
   **Note:** Some plugins won’t populate their features until napari has been re-opened.  
 
-
 Read the documentation and install:
-(`Dannielle: is this supposed to say stardist-napari-bio-sample-data or stardist-napari, bio-sample-data?`)
 * [stardist-napari](https://www.napari-hub.org/plugins/stardist-napari)  
-* [bio-sample-data](https://www.napari-hub.org/plugins/napari-bio-sample-data)  
 * Navigate to the [Stardist lesson from the 2022 SciPy Workshop](https://alisterburt.github.io/napari-workshops/notebooks/segmenting_and_measuring_nuclei_stardist.html).   
 * In Jupyter Lab, start a blank notebook.  
 * Work through the tutorial. 

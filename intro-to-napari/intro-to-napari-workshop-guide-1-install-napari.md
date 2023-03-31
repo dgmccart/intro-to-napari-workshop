@@ -11,13 +11,11 @@ This workshop walks you through the following topics and exercises:
 
 This topic covers the following:
 
-* [Install an environment manager](#install-an-environment-manager)   
+* [Install an environment manager](#install-an-environment-manager)
 * [Create an environment](#create-an-environment)
-* [Install napari](#install-napari)
 * [Enter or activate the environment](#enter-or-activate-the-environment)
-* [Install napari](#install-napari) 
+* [Install napari](#install-napari)
 * [Open and close napari](#open-and-close-napari)
-
 
 Although napari has a bundled app, the current recommended installation method requires some work with terminal or command prompt. Follow the steps below, copying and pasting the commands into terminal/command prompt when noted.
 
@@ -65,10 +63,10 @@ Type one of the following commands on the terminal (Mac) or at the Anaconda Prom
 * Recommended command: 
 
   ```bash
-  conda install -c conda-forge napari=0.4.16
+  conda install -c conda-forge napari=0.4.17
   ```
 
-   **Note:** 0.4.16 can be replaced with any desired version of napari.
+   **Note:** 0.4.17 can be replaced with any desired version of napari.
 
 * Alternative command if the above fails:
     ```bash

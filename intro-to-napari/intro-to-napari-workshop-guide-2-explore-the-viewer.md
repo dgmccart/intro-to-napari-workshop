@@ -16,9 +16,9 @@ This guide covers the following topics:
 * [Explore images in 2D and 3D](#explore-images-in-2d-and-3d)  
 * [Explore stack manipulation](#explore-stack-manipulation)  
 * [Explore layer types](#explore-layer-types)  
-* [Install your first plugin](#install-your-1st-plugin)
+* [Install your first plugin](#install-your-first-plugin)
 
-## Open an image    
+## Open an image
   
 * Open a sample image that comes with napari by selecting:  
 **File**>**Open Sample**>**napari**>**Cells (3D + 2Ch)**  
@@ -31,7 +31,7 @@ This guide covers the following topics:
 * Toggle layers on and off with the **eye button next to the layer name** in the layer list.  
 * Use the dimension sliders beneath the canvas to  control the z position/slice number. Slide through the 3D stack one 2D slice at a time.  
 
-* Use two finger scroll to zoom in and out.  
+* Scroll (use two finger scroll on a touchpad) to zoom in and out.  
 
 * Click and drag to move the images in the canvas.  
 
@@ -47,16 +47,16 @@ It is second from the right end on the row of viewer buttons.
 ![2d-3d-button](resources/2d-3d-button-2d.png)  
 When you're in 3D mode, it looks like this:  
 ![2d-3d-button-3d](resources/2d-3d-button-3d.png)  
-It is second from the left end on the row of viewer buttons.   
-* Click and scroll on the 3D image to rotate.	
-* Shift + click to translate the 3D image.  
-* Use two finger scroll to zoom in and out of the 3D volume. 
+It is second from the left end on the row of viewer buttons.
+* Click and drag on the 3D image to rotate.
+* Shift + click and drag to translate (move) the 3D image.  
+* Scroll to zoom in and out of the 3D volume.
 * Move the **nuclei** and **membrane** 3D volumes side by side by toggling the grid mode button. (Fifth button on the lower left bar).
-* Toggle back to 2D mode.  
+* Toggle back to 2D mode (Second button on the lower left bar).  
  
 ## Adjust image visualization.   
 * Select an image from the layers list (selected images are blue in the layer list).  
-* Adjust the contrast limits by control+click or right-click(Mac)/right-click(Windows) on the contrast limits slider in the layer controls section  
+* Adjust the contrast limits by control+click(Mac) or right-click(Windows) on the contrast limits slider in the layer controls section  
 ![layer-controls](resources/layer-controls.png)  
  to open the expanded view with min and max pixel values labeled on the ends of the slider.  
 * Adjust opacity, color map, and blending  in the layer controls menu.  
@@ -64,8 +64,10 @@ It is second from the left end on the row of viewer buttons.
 ![console-button](resources/console-button.png)    
 * Adjust the scale of the image. Enter the commands one line at a time with an indent on the second line as shown below: 
 
-    For layer in viewer.layers:  
-    ```layer.scale = [0.35, 0.2, 0.2]```
+    ```Python
+    for layer in viewer.layers:  
+        layer.scale = [0.35, 0.2, 0.2]
+    ```
 
     **Note:** If you cannot find your images in the canvas, toggle grid mode on and off - napari doesn’t hold images next to each other in grid mode when you change their properties.  
 
@@ -77,7 +79,7 @@ in the integrated console.
 ## Explore stack manipulation  
 * Select both the _nuclei_ and _membrane_ layers in the layer list using **shift**+click.  
 * Control+click(Mac)/right-click(Windows) either of the selected layers to open the layer actions menu.  
-    * Click **Link Layers** to be able to control layers properties of both layers using the layer control panel - this function works like the **group** command in docs.  
+    * Click **Link Layers** to be able to control layers properties of both layers using the layer control panel.  
 
       **Note:** Unless layers are linked, changes in the layer control panel will only affect the selected layer, and when multiple layers are selected the layer control panel will not be not visible even when layers are linked.  
 
@@ -85,8 +87,8 @@ in the integrated console.
     * Unlink layers  
     * Toggle to 2D mode  
     * Merge layers:	
-        * Set interpolation of the layers to **nearest**. (There may be an error with **linear** mode).  
-        * Click **Merge to Stack** to combine the **nuclei** and **membrane** layers to make a single layer with an additional slider that controls the channel axis.  
+        * Set interpolation of both layers to **nearest**. (There may be an error with **linear** mode).  
+        * Select both layers and click **Merge to Stack** to combine the **nuclei** and **membrane** layers to make a single layer with an additional slider that controls the channel axis.  
     * Rename this layer to **cells** by double clicking the layer in the layer list and replacing the text.  
     * Rename the sliders **Ch** and **Z** by double clicking the **0** and **1** on the left side of the sliders and replacing the text.  
     * Explore the data using the sliders.  
@@ -100,16 +102,16 @@ in the integrated console.
     * In 2D mode, use the layer controls to add points, draw shapes, or color on your image (referring to points, shapes, and labels layers respectively).  
 
       **Note:** These layers can be used for annotation of images.  
-* Delete all layers in the layer list using the trash can button on the top right of the layer list.  
+* Delete all layers in the layer list by selecting one layer, and then pressing Command+A(Mac) / Control+A(Windows) to select all layers. Then click the trash can button on the top right of the layer list. 
 
-## Install your 1st plugin  
+## Install your first plugin  
 * Navigate to napari-hub.org - this is the platform to discover and share plugins.  
 * Search for **sample:**.
 * Scroll down until you see **napari-bio-sample-data**.  
 * Select **napari-bio-sample-data**.  
 * Read the documentation on the plugin page.  
 * In napari, open  
-**Plugins**>**Install/Uninstall Plugins**   
+**Plugins**>**Install/Uninstall Plugins...**   
 and wait for the plugin list to populate.  
 * Search for **sample** in the top search bar, and click the install button next to **napari-bio-sample-data**.  
 
@@ -119,13 +121,13 @@ and wait for the plugin list to populate.
 
     **Note:** Some plugins won’t populate their features until napari has been re-opened.  Reopen napari if needed.  
   
-* **Open File**>**Open Sample**>**napari-bio-sample-data**>**3D nuclei**  
+* **File**>**Open Sample**>**napari-bio-sample-data**>**3D nuclei**  
     * Select the **nuclei label** labels layer.
     * **Control+click**(Mac)/**right-click**(Windows) to open the layer actions menu and click the **Convert to Image** option which converts labels layers to image layers.  
 
        **Note:** **Convert to Labels** converts an image layer to a labels layer. 
 
-    * **Control+click** (Mac)/**right-click** (Windows) on the nuclei image layer and make a max projection by **Make Projection**>**max**.  
+    * **Control+click** (Mac)/**right-click** (Windows) on the nuclei image layer and make a max projection by **Projections**>**Max projection**.  
 
        **Note:** The sliders for the highest dimensionality layer (e.g. a 3D layer in a layer list with other 2D layers) will always be visible on the viewer even when other layers of fewer dimensions are being viewed. In this case, the nuclei max-projection is a 2D image, so moving the slider does not update the canvas display and the same 2D image is visible at every slider position.  
     
