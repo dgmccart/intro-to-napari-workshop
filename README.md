@@ -2,7 +2,7 @@
 
 A workshop to get started with napari.
 
-**To see the built website, go to https://melissawm.github.io/intro-to-napari-workshop**
+**To see the built website, go to https://dgmccart.github.io/intro-to-napari-workshop**
 
 **To see a live version where you can execute the notebooks on your browser, use [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/melissawm/intro-to-napari-workshop/binder)**
 
