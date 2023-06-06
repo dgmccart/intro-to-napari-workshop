@@ -8,7 +8,4 @@ This workshop takes you through the following topics with hands on exercises:
 * [Complete a workflow](intro-to-napari-workshop-guide-4-complete-a-workflow.md) - 15 minutes
 * [Jupyter notebooks and napari](intro-to-napari-workshop-guide-5-jupyter-notebooks-and-jupyter-lab.md) - 30 minutes
 * [Resources](intro-to-napari-workshop-guide-6-resources.md)
-   * Question bank - ask your questions!  
-   * Additional learning materials  
-   * References
 
